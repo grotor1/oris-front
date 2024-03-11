@@ -45,7 +45,7 @@ watch(() => props.modelValue, (value) => {
 
     {{ initial }}
 
-    <span v-for="item in count">
+    <span v-for="(item, index) in count" :key="index">
       {{item}}
     </span>
 
